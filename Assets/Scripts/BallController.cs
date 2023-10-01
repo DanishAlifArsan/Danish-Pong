@@ -14,14 +14,12 @@ public class BallController : MonoBehaviour
         rigidbody.velocity = speed; 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
     public void ResetBall() 
     { 
         transform.position = new Vector3(resetPosition.x, resetPosition.y, 0); 
+    }
+
+    public void ActivatePUSpeedUP(float magnitude) {
+        rigidbody.velocity *= magnitude;
     }
 }
