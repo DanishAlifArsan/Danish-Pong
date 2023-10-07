@@ -10,4 +10,12 @@ public class MainMenuController : MonoBehaviour
         Debug.Log("Created by Danish");
         SceneManager.LoadScene("SampleScene"); 
     } 
+    public void BackToMenu() 
+    { 
+        SceneManager.LoadScene("Main Menu"); 
+    } 
+    public void Credit() 
+    { 
+        SceneManager.LoadScene("Credit"); 
+    } 
 } 
